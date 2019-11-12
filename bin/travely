@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
-puts "Hello"
+require "./lib/environment"
+
+Travely::Cli.new.intro

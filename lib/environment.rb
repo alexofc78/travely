@@ -1,5 +1,6 @@
 require_relative "travely/version"
 require_relative "travely/cli"
+require_relative "travely/api"
 #require 'pry'
 
 module Travely

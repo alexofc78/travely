@@ -6,6 +6,9 @@ class Travely::Cli
 
  #   def call
  #     Travely::API.new.fetch
+ #     Travely::Flights.all.each do |flight|
+ #         puts flight.name
+ #     end
  #   end
 
 

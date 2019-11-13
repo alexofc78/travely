@@ -4,7 +4,7 @@ class Travely::API
         puts "Hello World"
     end
 
-#    def fetch
+#    def prices
 #        key = ENV["API_KEY"] or the key
 #        url = "type the url here"
 #        response = HTTParty.get(url)

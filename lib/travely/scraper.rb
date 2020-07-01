@@ -1,22 +1,37 @@
-class EdenEvents::Scraper
+# class Travely::Scraper
 
-    def self.scrape_deals
-        doc = Nokogiri::HTML(open("https://www.skyscanner.com"))
+#     def self.scrape_capcana
+
+#         page = Nokogiri::HTML(open("http://capcana.com/vive-cap-cana/"))
         
-        deals = page.css("div.shelf-tiles")
+#       #  binding.pry
+#         capcana.each do |element|
+#             name = element.css("").text
+#             Travely::Capcana.new(name)
+#             capcana.city = element.css("").text
+#             capcana.country = element.css("").text
 
-        deals.each do |d|
-            name = d.text
-            Travely::deals.new(name)
-        end
+#         end
 
-    end
+#     end
 
+  
 
-
+# end
 
 
-end
+
+#   def make_courses
+# #    binding.pry
+#     get_courses.css("#course-grid.block") # 1) Need a new selector; 2) Iterate
+    
+#     get_courses.css("h1"). each do |element|
+#       course = Course.new
+#       course.title = element.css("h1").text
+#       course.schedule = element.css("em").text
+#       course.description = element.css("p").text
+#     end
+
 
 
 
@@ -66,4 +81,22 @@ end
 #     end
 #   end
   
+# end
+
+
+
+# require 'nokogiri'
+# require 'open-uri'
+
+
+# html = open("https://flatironschool.com/")
+
+# doc = Nokogiri::HTML(html)
+ 
+# doc.css(".inlineMobileLeft-2Yo002.imageTextBlockGrid3-2XAK6G")
+
+# courses = doc.css("#2a778efd-1685-5ec6-9e5a-0843d6a88b7b .inlineMobileLeft-2Yo002.imageTextBlockGrid3-2XAK6G")
+ 
+# courses.each do |course|
+#   puts course.text.strip
 # end

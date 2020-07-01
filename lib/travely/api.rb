@@ -1,20 +1,32 @@
+#should I eliminate this file or at least comment it out since i´ll be using scraping?
+
 class Travely::API
 
-    def fetch
-        puts "Hello World"
+    def fetch_location(city)#weather
+        key = "ZIjvuNhGlXdPUSfZ66wz4lLQVu85nbbF"
+        # url = "http://dataservice.accuweather.com/forecasts/v1/daily/15day/{key}"
+        url = "http://dataservice.accuweather.com/locations/v1/cities/search?apikey=#{key}&q=#{city}"
+        response = HTTParty.get(url)
+        location = response[0]["Key"]
+        fetch_weather(location)
+# binding.pry
+
+
+#        response["results"].each do |weather|
+#           location = weather["2257912"]
+#           temperature = weather[" "]
+#           precipitation = weather[" "]["url"]
+#           Travely::Weather.new(location,temperature,precipitation)
+#        end
     end
 
-#    def prices
-#        key = ENV["API_KEY"] or the key
-#        url = "type the url here"
-#        response = HTTParty.get(url)
-#        response["results"].each do |movie|
-#           name = movie["display_title"]
-#           rating = movie["mpaa_rating"]
-#           link = movie["link"]["url"]
-#           Movie.new(name, rating, link)
-#        end
-#    end
+    def fetch_weather(location)
+        key = "ZIjvuNhGlXdPUSfZ66wz4lLQVu85nbbF"
+        url = "http://dataservice.accuweather.com/forecasts/v1/daily/5day/#{location}?apikey=#{key}"
+        response = HTTParty.get(url)
+        binding.pry
+
+    end
 
 
 

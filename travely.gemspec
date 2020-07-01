@@ -8,16 +8,16 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Alexandra Oliveros"]
   spec.email         = ["alexofc@gmail.com"]
 
-  spec.summary       = %q{eilgeligue}
-  spec.description   = %q{.kdlegjlr}
-  spec.homepage      = "http://helloworld.com"
+  spec.summary       = %q{eilgeligue} #what should i put in this summary?
+  spec.description   = %q{.kdlegjlr} #what should i put in this description?
+  spec.homepage      = "http://helloworld.com" #here i should put www.skyscanner.com?
   spec.license       = "MIT"
 
-  spec.metadata["allowed_push_host"] = "http://helloworld.com"
+  spec.metadata["allowed_push_host"] = "http://helloworld.com" #here i should put www.skyscanner.com?
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "http://helloworld.com"
-  spec.metadata["changelog_uri"] = "http://helloworld.com"
+  spec.metadata["source_code_uri"] = "http://helloworld.com" #here i should put www.skyscanner.com?
+  spec.metadata["changelog_uri"] = "http://helloworld.com" #here i should put www.skyscanner.com?
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
